@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/wallpaper"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/root_view_sign_in"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        app:contentPadding="10sp"
+        app:cardCornerRadius="26sp"
+        android:elevation="10sp"
+        android:layout_marginHorizontal="38sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingHorizontal="25sp"
+            android:paddingTop="48sp"
+            android:paddingBottom="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Sign In"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#1f2937"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please sign in to your account." />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="25sp"
+                android:text="Email or Username"
+                android:textStyle="bold"
+                android:textColor="#374151"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edEmail"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="8sp"
+                android:layout_marginTop="15px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle" />
+
+            <!-- password input -->
+
+            <TextView
+                android:layout_marginTop="25sp"
+                android:text="Password"
+                android:textStyle="bold"
+                android:textColor="#374151"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/edPassword"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="8sp"
+                android:layout_marginTop="15px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle" />
+
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:text="Sign In"
+                android:textColor="#FFF"
+                android:layout_marginTop="25sp"
+                android:background="@drawable/custombutton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/TextBtnSignUp"
+                android:textColor="#03A679"
+                android:textSize="13sp"
+                android:layout_marginTop="15sp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up Now" />
+
+            <TextView
+                android:layout_marginTop="24sp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Copyright © 2021-2024 mwarevn" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

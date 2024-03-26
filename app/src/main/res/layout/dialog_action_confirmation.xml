@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="25sp"
+    android:layout_margin="25sp"
+    app:cardCornerRadius="18sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Are you sure?"
+            android:id="@+id/tvTitle"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#FFC107"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:text="This action can't be reverse."
+            android:layout_marginTop="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textBtnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:background="@drawable/textarea"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="8sp"
+                android:layout_marginHorizontal="8sp" />
+
+            <TextView
+                android:id="@+id/textBtnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textColor="#FFF"
+                android:background="@drawable/textarea"
+                android:backgroundTint="#3F51B5"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="8sp"
+                android:layout_marginHorizontal="8sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

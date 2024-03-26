@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="35sp"
+    app:cardCornerRadius="18sp"
+    app:contentPadding="25sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--    Change avatar    -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25sp"
+            app:cardCornerRadius="1000sp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="100sp"
+                android:layout_height="100sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!--    change name    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="8sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginBottom="4sp"
+                android:text="full name"
+                android:textColor="#1e1e1e"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textarea"
+                android:hint="type full name"
+                android:maxLines="1"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="10sp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="8sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginBottom="4sp"
+                android:text="username"
+                android:textColor="#1e1e1e"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textarea"
+                android:hint="type username"
+                android:maxLines="1"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="10sp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="8sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginBottom="4sp"
+                android:text="email"
+                android:textColor="#1e1e1e"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textarea"
+                android:hint="type email"
+                android:maxLines="1"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="10sp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="8sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginBottom="4sp"
+                android:text="password"
+                android:textColor="#1e1e1e"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textarea"
+                android:hint="type password"
+                android:maxLines="1"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="10sp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- action -->
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:paddingHorizontal="5sp"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textBtnCancel"
+                android:background="@drawable/textarea"
+                android:paddingVertical="8sp"
+                android:paddingHorizontal="15sp"
+                android:backgroundTint="#828389"
+                android:textColor="#FFF"
+                android:layout_marginHorizontal="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+            <TextView
+                android:id="@+id/textBtnApplyChange"
+                android:background="@drawable/textarea"
+                android:paddingVertical="8sp"
+                android:paddingHorizontal="15sp"
+                android:backgroundTint="#3F51B5"
+                android:textColor="#FFF"
+                android:layout_marginHorizontal="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply change" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

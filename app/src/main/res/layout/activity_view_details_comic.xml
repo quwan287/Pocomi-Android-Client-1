@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24sp"
+    android:background="#FFF"
+    tools:context=".ViewDetailsComicActivity">
+
+    <ImageView
+        android:id="@+id/ivBackBtn"
+        android:layout_margin="25sp"
+        android:src="@drawable/back"
+        android:layout_width="28sp"
+        android:layout_height="28sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingHorizontal="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginVertical="10sp"
+                    app:cardElevation="1sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ivPoster"
+                        android:layout_width="150sp"
+                        android:layout_height="228sp" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_marginStart="15sp"
+                    android:paddingVertical="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvComicName"
+                        android:textColor="#f68067"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginTop="8sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:textColor="#1e1e1e"
+                            android:textStyle="bold"
+                            android:text="Author: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tvComicAuthor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="8sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="#1e1e1e"
+                            android:textStyle="bold"
+                            android:text="Posted at: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tvComicPublicAt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:backgroundTint="#FF5722"
+                        android:textAllCaps="false"
+                        android:id="@+id/btnReadComic"
+                        android:layout_marginTop="10sp"
+                        android:paddingHorizontal="15sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/textarea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read comic" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#1e1e1e"
+                android:text="Short description"
+                android:textStyle="bold"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvComicDesc"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="#1e1e1e"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:textStyle="bold"
+                android:text="Comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

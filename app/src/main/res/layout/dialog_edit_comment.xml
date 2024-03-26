@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="15sp"
+    android:id="@+id/dialog_comment_edit"
+    android:layout_margin="28sp"
+    app:cardCornerRadius="26sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginHorizontal="15sp"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="18sp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment" />
+
+        <EditText
+            android:id="@+id/edCommentContent"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="128sp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:paddingVertical="8sp"
+            android:paddingHorizontal="15sp"
+            android:layout_marginVertical="8sp"
+            android:background="@drawable/textarea"
+            android:hint="Type comment here..." />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:textSize="15sp"
+                android:text="Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.Button.TextButton" />
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:textStyle="bold"
+                    android:textColor="#0027FF"
+                    android:textSize="15sp"
+                    android:text="Replace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Material3.Button.TextButton" />
+
+                <Button
+                    android:id="@+id/btnExit"
+                    android:textStyle="bold"
+                    android:textColor="#948585"
+                    android:textSize="15sp"
+                    android:text="cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Material3.Button.TextButton" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

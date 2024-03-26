@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="actionbarLightBackButton" parent="Theme.PolyTruyenClient">
+        <item name="android:background">#FFF</item>
+        <item name="homeAsUpIndicator">@drawable/arrow_back</item>
+    </style>
+
+</resources>
