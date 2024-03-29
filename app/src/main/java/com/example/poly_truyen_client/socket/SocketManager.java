@@ -7,21 +7,23 @@ import java.net.URISyntaxException;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 
-public class SocketSingleton {
-    private static SocketSingleton instance;
+public class SocketManager {
+
+    private static SocketManager instance;
     private Socket socket;
 
-    SocketSingleton() {
+    private SocketManager(String apiUrl) {
         try {
-            socket = IO.socket(new ConnectAPI().API_URL);
+            socket = IO.socket(apiUrl);
+            socket.connect();
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
     }
 
-    public static synchronized SocketSingleton getInstance() {
+    public static synchronized SocketManager getInstance(String apiUrl) {
         if (instance == null) {
-            instance = new SocketSingleton();
+            instance = new SocketManager(apiUrl);
         }
         return instance;
     }

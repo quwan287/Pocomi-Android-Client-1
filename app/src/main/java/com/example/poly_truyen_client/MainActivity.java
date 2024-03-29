@@ -12,6 +12,7 @@ import com.example.poly_truyen_client.models.Comic;
 import com.example.poly_truyen_client.notifications.NotificationEvent;
 import com.example.poly_truyen_client.notifications.NotifyConfig;
 import com.example.poly_truyen_client.socket.SocketConfig;
+import com.example.poly_truyen_client.socket.SocketManager;
 import com.example.poly_truyen_client.socket.SocketSingleton;
 import com.example.poly_truyen_client.ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -41,15 +42,15 @@ import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 
 public class MainActivity extends AppCompatActivity {
-    Socket socket;
+    private Socket socket;
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         new SocketConfig();
-        socket = SocketSingleton.getInstance().getSocket();
-
+        SocketManager socketManager = SocketManager.getInstance(new ConnectAPI().API_URL);
+        socket = socketManager.getSocket();
         socket.on("ServerPostNewComic", new Emitter.Listener() {
             @Override
             public void call(Object... args) {
