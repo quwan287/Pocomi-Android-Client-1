@@ -43,6 +43,9 @@ import io.socket.emitter.Emitter;
 
 public class MainActivity extends AppCompatActivity {
     String abc = "Day roi!";
+    String ab = "Day roi!";
+    String c = "Day roi!";
+
     }
 
 
